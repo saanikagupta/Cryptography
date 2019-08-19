@@ -1,7 +1,6 @@
 import numpy as np
 j_index = []
 
-
 def encrypt(new, key):
     x = 0
     cipher = ''
