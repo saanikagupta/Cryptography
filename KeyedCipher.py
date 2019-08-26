@@ -33,7 +33,8 @@ def decrypt(cipher, size, key, bogus):
 			s += x[ind]
 		plain_groups.append(s)
 	plain = "".join(plain_groups)
-	plain = plain[: -bogus]
+	if(bogus != 0):
+			plain = plain[: -bogus]
 	return plain
 
 plain = input('Enter the plain text: ')
